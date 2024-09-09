@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scope of variables</title>
+</head>
+
+<body>
+    <h1>Scope of variables</h1>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <script>
+        var b = 5;
+        function myFunction() {
+            var a = 4;
+            document.getElementById("p1").innerHTML = b * a;
+        }
+        document.getElementById("p2").innerHTML = a;
+        document.getElementById("p3").innerHTML = b;
+    </script>
+</body>
+</html>
